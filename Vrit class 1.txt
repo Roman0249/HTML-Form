@@ -1,0 +1,21 @@
+HTML -- Hypertext MarkUp language -- used to create static webpage
+
+Used to create static objects on a page.
+
+<> -- starting tag
+</> -- closing tag
+
+Shift+ Alt + up arrow -- copy paste cursor line
+
+Id in html??
+Class in html??
+
+difference between Id and Class??
+
+Ctrl + / == comment in html
+
+CSS can be styled in three ways
+--inline style
+--internal CSS
+--external CSS
+

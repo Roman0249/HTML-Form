@@ -1,0 +1,8 @@
+what does go live do?
+
+assignment:
+
+form with type checkbox
+type radio
+
+div tag is a wrapper which can wrap image,iframe, video,etc
