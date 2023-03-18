@@ -1,0 +1,24 @@
+git init
+git status
+git add .
+git commit -m 'Student Form Registration'
+git config --global user.name 'Roman0249'
+git config user.email 'romeromans029@gmail.com'
+git remote add origin https://github.com/Roman0249/HTML-Form.git
+git push origin master
+
+
+
+after project is changed
+
+git status
+git add .
+git commit -m 'added bckgrd color'
+git push
+
+
+to connect local end to remote end, we use git platform such as git bash.
+
+github -- cloud storage to store repositories
+
+git -- version control system, to manage repositories. 

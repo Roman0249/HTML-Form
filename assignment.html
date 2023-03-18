@@ -4,63 +4,279 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form-task</title>
-
+    <title>Student Registration Form</title>
     <style>
-      body {
+      .container {
+        height: 800px;
+        width: 70%;
         background-color: lightblue;
       }
 
-      form {
-        background-color: aquamarine;
+      #firstName {
+        padding-left: 40px;
+      }
+
+      #lastName {
+        padding-left: 40px;
+      }
+
+      #email1 {
+        padding-left: 40px;
+      }
+
+      #mobile1 {
+        padding-left: 40px;
+      }
+
+      #first-name {
+        margin-bottom: 5px;
+        margin-left: 45px;
+        width: 300px;
+      }
+
+      #last-name {
+        margin-bottom: 5px;
+        margin-left: 46px;
+        width: 300px;
+      }
+
+      #email {
+        margin-bottom: 5px;
+        margin-left: 77px;
+        width: 300px;
+      }
+
+      #mobile {
+        margin-bottom: 5px;
+        margin-left: 69px;
+        width: 300px;
+      }
+
+      .gender {
+        display: inline-block;
+      }
+
+      .radio1 {
+        display: inline-block;
+        margin-left: 60px;
+      }
+
+      .inlineDiv {
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      .address1 {
+        display: inline-block;
+      }
+
+      .textadd {
+        display: inline-block;
+      }
+
+      .addr {
+        padding-left: 40px;
+      }
+
+      .textadd {
+        margin-left: 62px;
+      }
+
+      .address1 {
+        position: relative;
+        bottom: 140px;
+      }
+
+      .DOB {
+        margin-left: 40px;
+        margin-bottom: 5px;
+      }
+
+      #DOB1 {
+        margin-left: 30px;
+        width: 300px;
+      }
+
+      #city {
+        padding-left: 40px;
+      }
+
+      #city1 {
+        margin-bottom: 5px;
+        margin-left: 86px;
+        width: 300px;
+      }
+
+      #areaPin {
+        padding-left: 40px;
+      }
+
+      #areaPin1 {
+        margin-bottom: 5px;
+        margin-left: 53px;
+        width: 300px;
+      }
+
+      #state {
+        padding-left: 40px;
+      }
+
+      #state1 {
+        margin-bottom: 5px;
+        margin-left: 81px;
+        width: 300px;
+      }
+
+      .qual {
+        position: relative;
+        bottom: 5px;
+        left: 40px;
+      }
+
+      #qualification {
+        position: relative;
+        top: -100px;
+        left: 163px;
+      }
+
+      .spec {
+        display: inline-block;
+        margin-left: -50px;
+        position: relative;
+        bottom: 60px;
+        right: 0px;
+      }
+
+      .spec1 {
+        display: inline-block;
+        padding-left: 20px;
+      }
+
+      #pwd {
+        padding-left: 40px;
+      }
+
+      #pwd1 {
+        margin-bottom: 5px;
+        margin-left: 52px;
+        width: 300px;
+      }
+
+      #header {
+        background-color: aqua;
       }
     </style>
   </head>
   <body>
-    <form>
-      <legend>Student Registration Form</legend>
-      <label for="first-name">First Name:</label>
-      <input
-        type="text"
-        placeholder="Select a name here"
-        id="first-name"
-        value=""
-      /><br /><br />
-      <label for="last-name">Last Name:</label>
-      <input
-        type="text"
-        placeholder="Select a name here"
-        id="last-name"
-        value=""
-      /><br /><br />
-      <label for="last-name">Email:</label>
-      <input
-        type="text"
-        placeholder="abc@gmail.com"
-        id="last-name"
-        value=""
-      /><br /><br />
-      <label for="last-name">Mobile:</label>
-      <input
-        type="text"
-        placeholder="only 10 digits are allowed"
-        id="last-name"
-        value=""
-      /><br /><br />
-      <label for="last-name">Last Name:</label>
-      <input
-        type="text"
-        placeholder="Select a name here"
-        id="last-name"
-        value=""
-      /><br /><br />
-      <p>Gender:</p>
-      <input type="radio" id="male" name="fav_language" value="Male" />
-        <label for="male">Male</label>  
-      <input type="radio" id="female" name="fav_language" value="Female" />  
-      <label for="female">Female</label>  
-      <input type="radio" id="others" name="fav_language" value="Others" />  
-      <label for="others">Others</label>
-    </form>
+    <div class="container">
+      <form>
+        <p style="text-align: center" id="header">
+          <u><b>Student Registrstion Form</b></u>
+        </p>
+        <label for="firstName" id="firstName">First Name: </label>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          id="first-name"
+          value=""
+        /><br />
+
+        <label for="last-name" id="lastName">Last Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your last name"
+          id="last-name"
+          value=""
+        /><br />
+
+        <label for="email" id="email1">Email:</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          value=""
+        /><br />
+
+        <label for="mobile" id="mobile1">Mobile:</label>
+        <input
+          type="number"
+          placeholder="Enter your mobile number"
+          id="mobile"
+          value=""
+        /><br />
+
+        <div class="inlineDiv">
+          <div class="gender">
+            <p>Gender:</p>
+          </div>
+          <div class="radio1">
+            <input type="radio" id="male" name="fav_language" value="Male" />
+            <label for="male">Male</label>
+
+            <input
+              type="radio"
+              id="female"
+              name="fav_language"
+              value="Female"
+            />
+            <label for="female">Female</label>
+
+            <input
+              type="radio"
+              id="others"
+              name="fav_language"
+              value="Others"
+            />
+            <label for="male">Others</label>
+          </div>
+        </div>
+
+        <div class="DOB">
+          <label for="Date of Birth">Date of Birth:</label>
+          <input type="date" id="DOB1" name="DOB" />
+        </div>
+        <div class="addr">
+          <div class="address1">
+            <p>Address:</p>
+          </div>
+          <div class="textadd">
+            <textarea name="address" rows="10" cols="45"></textarea>
+          </div>
+        </div>
+
+        <label for="city" id="city">City: </label>
+        <input type="text" placeholder="" id="city1" value="" /><br />
+
+        <label for="areaPin" id="areaPin">Area PIN: </label>
+        <input type="text" placeholder="" id="areaPin1" value="" /><br />
+
+        <label for="state" id="state">State: </label>
+        <input type="text" placeholder="" id="state1" value="" /><br />
+
+        <div class="qual"><p>Qualification:</p></div>
+        <select id="qualification" name="qulaifction">
+          <option value="+2">+2</option>
+          <option value="Bachelors">Bachelors</option>
+          <option value="Masters">Masters</option>
+          <option value="PHd">PHd</option>
+        </select>
+
+        <div class="spec"><p>Specialization:</p></div>
+        <div class="spec1">
+          <input type="checkbox" id="" name="CS" value="" />
+          <label for="CS"> Computer Science</label><br />
+          <input type="checkbox" id="IT" name="IT" value="" />
+          <label for="IT"> Information Technology</label><br />
+          <input type="checkbox" id="CA" name="CA" value="" />
+          <label for="vehicle3"> Computer Architecture</label><br />
+          <input type="checkbox" id="TC" name="TC" value="" />
+          <label for="vehicle3"> Tele Communication</label><br />
+        </div>
+        <br />
+
+        <label for="pwd" id="pwd">Password:</label>
+        <input type="password" id="pwd1" name="pwd" />
+      </form>
+    </div>
   </body>
 </html>
