@@ -1,0 +1,5 @@
+There are 5 selectors in CSS
+id
+class
+universal selector 
+group selector
